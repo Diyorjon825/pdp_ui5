@@ -53,6 +53,43 @@ class _HomePageState extends State<HomePage> {
                           .toList(),
                     ),
                   ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Airport Hotels',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: hotels
+                          .map((element) => hotestScroll(element))
+                          .toList(),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Resort Hotels',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: hotels
+                          .map((element) => hotestScroll(element))
+                          .toList(),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
                 ],
               ),
             )
